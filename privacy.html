@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HR Player - 개인정보 처리방침 (Privacy Policy)</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+  body { font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+         font-weight: 450; max-width: 680px; margin: 0 auto; padding: 48px 24px; line-height: 1.7; color: #1c1c1e; background: #fff; }
+  h1 { font-size: 24px; }
+  h2 { font-size: 18px; margin-top: 32px; }
+  hr { border: 0; border-top: 1px solid #e0e0e4; margin: 48px 0; }
+  a { color: #d6336c; }
+  code { font-size: 14px; }
+  footer { margin-top: 48px; font-size: 13px; color: #5f5f66; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #111; color: #e5e5ea; }
+    hr { border-top-color: #333; }
+    footer { color: #a1a1a8; }
+    a { color: #ff8fb1; }
+  }
+</style>
+</head>
+<body>
+  <p><a href="#en">English version below</a></p>
+
+  <h1>HR Player 개인정보 처리방침</h1>
+  <p>최종 수정일: 2026년 10월 24일</p>
+  <p>이 방침은 HR Player의 iOS 앱과 Android 앱에 함께 적용됩니다.</p>
+
+  <h2>요약</h2>
+  <p><b>HR Player는 개발자의 서버로 어떤 개인정보도 수집·전송하지 않습니다.</b>
+  이 앱에는 서버, 분석 도구, 광고가 없습니다. Google Drive의 데이터는 사용자의 기기와 Google 사이에서만 주고받습니다.</p>
+
+  <h2>Google 계정과 Google Drive (선택)</h2>
+  <p>Drive 탭에서 Google 계정으로 로그인한 경우에만 아래 권한을 요청합니다.</p>
+  <ul>
+    <li><b>기본 계정 정보</b> (이름, 이메일 주소, 프로필 사진): Google 로그인 과정에서 로그인한 계정을 식별하는 데만 쓰입니다.</li>
+    <li><b>Google Drive 읽기</b> (<code>https://www.googleapis.com/auth/drive.readonly</code>):
+      <ul>
+        <li>드라이브에서 동영상 파일을 검색해, 동영상이 들어 있는 폴더를 목록으로 보여 줍니다. 이때 파일·폴더의 이름, 종류, 상위 폴더, 썸네일 정보를 읽습니다.</li>
+        <li>사용자가 고른 동영상을 재생하기 위해 그 파일의 내용을 기기로 스트리밍합니다.</li>
+        <li>(Android) 사용자가 다운로드 버튼을 누른 동영상은 오프라인 재생을 위해 앱 전용 저장 공간에 사본을 저장합니다. Android 앱은 목록에 표시하기 위해 파일 크기, 영상 길이, 만든 날짜도 읽습니다.</li>
+        <li>영상과 같은 폴더에 있는 자막 파일(.srt, .smi, .ass 등)을 찾아 함께 표시하기 위해 그 폴더의 파일 목록과 자막 파일 내용을 읽습니다.</li>
+      </ul>
+    </li>
+    <li>HR Player는 드라이브의 파일을 <b>읽기만</b> 하며, 만들거나 수정하거나 삭제하지 않습니다.</li>
+    <li>Google에서 받은 데이터는 위 재생 기능에만 사용하며, 광고·분석·프로필 작성·인공지능 학습 등 다른 목적으로 사용하지 않습니다.</li>
+    <li>Google 사용자 데이터를 제3자에게 판매하거나 제공하지 않으며, 개발자를 포함해 어떤 사람도 열람하지 않습니다.</li>
+    <li>HR Player가 Google API에서 받은 정보를 사용하고 다른 앱으로 전송하는 방식은 제한적 사용(Limited Use) 요구사항을 포함한
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>을 준수합니다.</li>
+  </ul>
+
+  <h2>기기에 저장하는 정보</h2>
+  <ul>
+    <li><b>로그인 정보</b>(OAuth 토큰): iOS는 Google 로그인 SDK가 기기의 키체인에, Android는 Google Play 서비스가 보관합니다.</li>
+    <li><b>이어보기 위치</b>: 영상별 마지막 재생 위치와 길이를 기기 안에만 저장합니다. Drive 영상은 파일 식별자로 구분합니다.</li>
+    <li><b>자막 사본</b>: 자막을 표시하기 위해 문자 인코딩을 바꾼 자막 파일을 기기의 캐시 폴더에 저장합니다.</li>
+    <li><b>썸네일</b>: iOS는 앱이 실행되는 동안 메모리에만, Android는 앱의 캐시 폴더에 보관합니다.</li>
+    <li><b>(Android) 목록 캐시·북마크·즐겨찾기·오프라인 사본</b>: 빠른 표시를 위한 영상 목록(이름, 크기 등), 사용자가 만든 북마크와 즐겨찾기, 사용자가 내려받은 동영상을 앱 전용 저장 공간에 보관합니다.</li>
+    <li>기기에 있는 동영상(파일 앱·가져오기·기기 저장소)은 기기 밖으로 전송되지 않습니다.</li>
+  </ul>
+
+  <h2>삭제와 권한 철회</h2>
+  <ul>
+    <li>iOS는 Drive 탭의 "로그아웃", Android는 설정의 Google Drive "해제"를 누르면 앱이 Drive 연결을 끊습니다.</li>
+    <li><a href="https://myaccount.google.com/permissions">Google 계정 › 서드파티 액세스</a>에서 언제든 HR Player의 권한을 철회할 수 있습니다.</li>
+    <li>(Android) 내려받은 동영상은 다운로드 버튼을 다시 눌러 언제든 지울 수 있습니다.</li>
+    <li>앱을 삭제하면 기기에 저장된 모든 정보(이어보기 위치, 자막 사본, 로그인 정보, 오프라인 사본 등)가 함께 삭제됩니다.</li>
+  </ul>
+
+  <h2>문의</h2>
+  <p>개인정보 관련 문의: <a href="mailto:tmdsh2000@naver.com">tmdsh2000@naver.com</a></p>
+
+  <hr>
+
+  <h1 id="en">HR Player Privacy Policy</h1>
+  <p>Last updated: October 24, 2026</p>
+  <p>This policy applies to both the iOS and Android versions of HR Player.</p>
+
+  <h2>Summary</h2>
+  <p><b>HR Player does not collect or send any personal data to the developer's servers.</b>
+  The app has no servers, no analytics, and no ads. Google Drive data is exchanged only between your device and Google.</p>
+
+  <h2>Google Account and Google Drive (optional)</h2>
+  <p>The following permissions are requested only when you sign in with Google on the Drive tab.</p>
+  <ul>
+    <li><b>Basic account info</b> (name, email address, profile picture): used only to identify the signed-in account during Google Sign-In.</li>
+    <li><b>Google Drive read-only access</b> (<code>https://www.googleapis.com/auth/drive.readonly</code>):
+      <ul>
+        <li>Searches your Drive for video files and lists the folders that contain videos. This reads file and folder names, file types, parent folders, and thumbnails.</li>
+        <li>Streams the content of the video you select to your device for playback.</li>
+        <li>(Android) When you tap the download button on a video, saves a copy in the app's private storage for offline playback. The Android app also reads file size, video duration, and creation date to show them in the list.</li>
+        <li>Reads the file list of the folder that contains the video, and the content of subtitle files (.srt, .smi, .ass, etc.) in that folder, to find and display matching subtitles.</li>
+      </ul>
+    </li>
+    <li>HR Player only <b>reads</b> your Drive files. It never creates, modifies, or deletes them.</li>
+    <li>Data received from Google is used only for the playback features above, and never for advertising, analytics, profiling, or training AI/ML models.</li>
+    <li>We do not sell or share Google user data with third parties, and no human, including the developer, reads it.</li>
+    <li>HR Player's use and transfer to any other app of information received from Google APIs will adhere to the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
+  </ul>
+
+  <h2>Data stored on your device</h2>
+  <ul>
+    <li><b>Sign-in credentials</b> (OAuth tokens): kept in the device Keychain by the Google Sign-In SDK on iOS, and by Google Play services on Android.</li>
+    <li><b>Resume positions</b>: the last playback position and duration of each video, stored only on the device. Drive videos are identified by their file ID.</li>
+    <li><b>Subtitle copies</b>: subtitle files converted to a readable text encoding, stored in the app's cache folder.</li>
+    <li><b>Thumbnails</b>: kept in memory only on iOS, and in the app's cache folder on Android.</li>
+    <li><b>(Android) List cache, bookmarks, favorites, offline copies</b>: the video list (names, sizes, etc.) for faster display, bookmarks and favorites you create, and videos you download are kept in the app's private storage.</li>
+    <li>Videos stored on your device (Files app, import, or device storage) never leave the device.</li>
+  </ul>
+
+  <h2>Deletion and revoking access</h2>
+  <ul>
+    <li>Tapping "Sign out" on the Drive tab (iOS) or "Disconnect" for Google Drive in Settings (Android) disconnects the app from Drive.</li>
+    <li>You can revoke HR Player's access at any time from <a href="https://myaccount.google.com/permissions">Google Account › Third-party access</a>.</li>
+    <li>(Android) Downloaded videos can be removed at any time by tapping the download button again.</li>
+    <li>Deleting the app removes all data it stored on the device (resume positions, subtitle copies, sign-in credentials, offline copies, etc.).</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Privacy questions: <a href="mailto:tmdsh2000@naver.com">tmdsh2000@naver.com</a></p>
+
+  <footer>© 2026 Huiryu Yoon · <a href="index.html">HR Player Support</a></footer>
+</body>
+</html>
