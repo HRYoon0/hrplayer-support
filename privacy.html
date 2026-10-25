@@ -27,7 +27,7 @@
   <p><a href="#en">English version below</a></p>
 
   <h1>HR Player 개인정보 처리방침</h1>
-  <p>최종 수정일: 2026년 10월 24일</p>
+  <p>최종 수정일: 2026년 10월 25일</p>
   <p>이 방침은 iPhone용 HR Player 앱에 적용됩니다.</p>
 
   <h2>요약</h2>
@@ -61,6 +61,17 @@
     <li>기기에 있는 동영상(파일 앱·가져오기)은 기기 밖으로 전송되지 않습니다.</li>
   </ul>
 
+  <h2>데이터 보호</h2>
+  <p>HR Player는 Google 사용자 데이터를 포함한 민감한 정보를 다음 방법으로 보호합니다.</p>
+  <ul>
+    <li><b>전송 중 암호화</b>: 앱의 모든 네트워크 통신(Google 로그인, Drive API, 동영상 스트리밍)은 HTTPS(TLS)로 암호화됩니다. iOS 앱 전송 보안(ATS) 예외를 두지 않아 암호화되지 않은 연결은 허용되지 않습니다.</li>
+    <li><b>통신 상대 제한</b>: 앱은 Google 서버와만 통신합니다. 개발자 서버나 제3자 서버로 데이터를 보내지 않으므로, 개발자 쪽에 보관되거나 유출될 수 있는 사용자 데이터가 없습니다.</li>
+    <li><b>로그인 정보 보호</b>: OAuth 토큰은 iOS 키체인에 암호화되어 저장되며, 다른 앱은 읽을 수 없습니다. 접근 토큰은 짧은 시간 뒤 만료되고 Google을 통해서만 갱신됩니다.</li>
+    <li><b>기기 저장 데이터 보호</b>: 이어보기 위치와 자막 사본은 iOS 앱 샌드박스 안에만 저장되어 다른 앱이 접근할 수 없고, 기기 암호가 설정된 경우 iOS 데이터 보호 기능으로 암호화됩니다. Drive 동영상 내용은 재생에 필요한 만큼만 메모리에 받아 두며 파일로 저장하지 않습니다.</li>
+    <li><b>최소 권한</b>: Drive 권한은 읽기 전용(<code>drive.readonly</code>)만 요청하며, 파일을 만들거나 수정·삭제할 수 없습니다.</li>
+    <li><b>사람의 접근 차단</b>: Google 사용자 데이터는 기기 밖으로 나가지 않으므로 개발자를 포함한 누구도 열람할 수 없습니다.</li>
+  </ul>
+
   <h2>삭제와 권한 철회</h2>
   <ul>
     <li>Drive 탭의 "로그아웃"을 누르면 기기에 저장된 로그인 정보가 삭제됩니다.</li>
@@ -74,7 +85,7 @@
   <hr>
 
   <h1 id="en">HR Player Privacy Policy</h1>
-  <p>Last updated: October 24, 2026</p>
+  <p>Last updated: October 25, 2026</p>
   <p>This policy applies to the HR Player app for iPhone.</p>
 
   <h2>Summary</h2>
@@ -106,6 +117,17 @@
     <li><b>Subtitle copies</b>: subtitle files converted to a readable text encoding, stored in the app's cache folder.</li>
     <li><b>Thumbnails</b>: kept in memory only while the app is running.</li>
     <li>Videos stored on your device (Files app or import) never leave the device.</li>
+  </ul>
+
+  <h2>How we protect your data</h2>
+  <p>HR Player protects sensitive data, including Google user data, as follows.</p>
+  <ul>
+    <li><b>Encryption in transit</b>: all network traffic (Google Sign-In, Drive API, video streaming) is encrypted with HTTPS (TLS). The app declares no App Transport Security exceptions, so unencrypted connections are not allowed.</li>
+    <li><b>No developer servers</b>: the app communicates only with Google's servers. No data is sent to the developer or any third-party server, so no user data is stored on, or can leak from, the developer's side.</li>
+    <li><b>Credential protection</b>: OAuth tokens are stored encrypted in the iOS Keychain, which other apps cannot read. Access tokens expire after a short time and are refreshed only through Google.</li>
+    <li><b>On-device data protection</b>: resume positions and subtitle copies are stored only inside the app's iOS sandbox, inaccessible to other apps, and are encrypted by iOS Data Protection when a device passcode is set. Drive video content is buffered in memory only as needed for playback and is never saved to a file.</li>
+    <li><b>Least privilege</b>: only read-only Drive access (<code>drive.readonly</code>) is requested; the app cannot create, modify, or delete files.</li>
+    <li><b>No human access</b>: Google user data never leaves your device, so no one, including the developer, can view it.</li>
   </ul>
 
   <h2>Deletion and revoking access</h2>
